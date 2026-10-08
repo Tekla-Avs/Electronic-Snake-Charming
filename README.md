@@ -25,7 +25,7 @@ Connected Servo Motors to the Servo Driver's pins from 8 to 14.
 | PCA9685 |   Buck  |
 |---------|---------|
 |   V+    |   OUT+  |
-|   GND   |   GND   |
+|   GND   |   OUT-  |
 
 ### Microphone Amplifier: MAX4466 -> ESP32
 
