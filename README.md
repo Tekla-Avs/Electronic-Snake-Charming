@@ -6,6 +6,8 @@ A robotic cobra that mimics real-time snake-charming dynamics through sound reac
 The project combines:
 - ESP32 MicroController
 - Microphone Amplifier MAX4466
+- Two 15 kg/cm Servos
+- Five 2kg/cm MG90S Servos
 - Servo Driver PCA9685
 - Buck Converter 300W 10A DC-DC Step-down module
 - Four Tesla Battery Cells in Series
