@@ -20,8 +20,8 @@ Connected Servo Motors to the Servo Driver's pins from 8 to 14.
 |   VCC   |   3.3V    |
 |   GND   |    GND    |
 
- I used DC/DC converter XL4015E1.
- P.S. It was essential to insert 2.2 mF capacitor right at the output pins, parallely to PCA's V+ and GND.
+ I used DC/DC converter XL4015E1. P.S.  
+ It was essential to insert 2.2 mF capacitor right at the output pins, parallely to PCA's V+ and GND.  
  Otherwise buck used to shut down.
  
 | PCA9685 |   Buck  |
@@ -40,8 +40,8 @@ Connected Servo Motors to the Servo Driver's pins from 8 to 14.
 
 ## Batteries:
 
-I used four Tesla cells in series with each other.
-Inserted a switch at the negative side of the battery output.
+I used four Tesla cells in series with each other.  
+Inserted a switch at the negative side of the battery output.  
 Those outputs go to IN+ and IN- of the buck converter.
 
 
