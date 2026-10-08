@@ -21,7 +21,8 @@ The project combines:
 
 ## Servo Motors:
 
-Connected Servo Motors to the Servo Driver's pins from 8 to 14.
+Connected Servo Motors to the Servo Driver's pins from 8 to 14.  
+Powerful 15kg/cm servos went to the base of the cobra to hold more weight, so, their pins are 8 and 9.
 
 
 
