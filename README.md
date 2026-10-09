@@ -1,4 +1,4 @@
-# Electronic-Snake-Charming: Robot-Cobra
+# Electronic Snake Charming: Robot Cobra
 A robotic cobra that mimics real-time snake-charming dynamics through sound reactivity. Snake body made of servos translate surrounding audio cues into coordinated slithering movements, creating an interactive snake charming experience.
 
 
