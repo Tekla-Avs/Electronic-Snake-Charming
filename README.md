@@ -18,9 +18,27 @@ The project combines:
 
 
 ## Software
+**Web Control Dashboard**
 
+Upon booting, the microcontroller hosts a local web server, accessible via a link generated in the Serial Monitor. The interface acts as a remote control panel with the following features:
 
-## Pinout
+- Microphone Toggle: A button to enable or disable the microphone input, seamlessly switching the robot between autonomous and manual modes.
+
+- Force Sleep/Wake Toggle: A manual override button to instantly command the cobra to sleep (lower its body) or wake up (stand at attention).
+
+- Live Servo Sliders: Seven visual slider lines, representing the robot's seven servos. When the microphone is toggled OFF, users can manually drag the dot on each line to precisely set the angle of any individual servo between 0 and 180 degrees.
+
+**Autonomous Audio-Reactive Mode**
+
+When the microphone is toggled ON, the software relies on real-time audio analysis to simulate a classic snake-charming experience. The robot's behavior is dictated by the following logic:
+
+- Sound-Activated Wake & Sleep: The cobra continuously monitors ambient noise. It automatically wakes up when it detects an audio signal and will smoothly return to its resting sleep state if the sound stops for a predefined period.
+
+- FFT-Driven Dancing: While hearing a continuous sound (like a flute or music), the software utilizes a Fast Fourier Transform (FFT) algorithm. This analyzes the frequency and amplitude of the incoming audio to generate synchronized, fluid movements across the 7 servos, making the cobra "dance" to the music.
+
+- Clap Detection: The audio processing includes sharp transient detection. If the cobra hears a loud, distinct clap while dancing, it instantly freezes in place. A second clap signals it to resume its FFT-driven dancing.
+
+## Pin Configuration
 
 ### Servo Motors:
 
