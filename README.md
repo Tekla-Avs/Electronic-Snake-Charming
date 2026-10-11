@@ -1,11 +1,8 @@
 # Electronic Snake Charming: Robot Cobra
 A robotic cobra that mimics real-time snake-charming dynamics through sound reactivity. Snake body made of servos translate surrounding audio cues into coordinated slithering movements, creating an interactive snake charming experience.
 
-
-# Overview
-In this project, I used PlatformIO in VScode for the code and 3D printer to print the details to keep servos in place.  
-The cobra's head was not modeled by me. It was found on the website that gathered free 3D models.
-
+I used PlatformIO in VScode for the code and 3D printer to print the details to keep servos in place.  
+The cobra's head was not modeled by me. It was found on the website that gathered free 3D models.  
 
 # Hardware
 
