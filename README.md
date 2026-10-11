@@ -14,7 +14,7 @@ The project combines:
 - Servo Driver PCA9685
 - Buck Converter 300W 10A DC-DC Step-down module
 - Four Tesla Battery Cells in Series
-- Switch
+- On/Off switch
 
 
 ## Software
