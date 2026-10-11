@@ -4,7 +4,7 @@ A robotic cobra that mimics real-time snake-charming dynamics through sound reac
 I used PlatformIO in VScode for the code and 3D printer to print the details to keep servos in place.  
 The cobra's head was not modeled by me. It was found on the website that gathered free 3D models.  
 
-# Hardware
+## Hardware
 
 The project combines:
 - ESP32 MicroController
@@ -17,19 +17,19 @@ The project combines:
 - Switch
 
 
-# Software
+## Software
 
 
-# Pinout
+## Pinout
 
-## Servo Motors:
+### Servo Motors:
 
 Connected Servo Motors to the Servo Driver's pins from 8 to 14.  
 Powerful 15kg/cm servos went to the base of the cobra to hold more weight, so, their pins are 8 and 9.
 
 
 
-## Servo Driver:
+### Servo Driver:
 
 | PCA9685 |   ESP32   |
 |---------|-----------|
@@ -47,7 +47,7 @@ Powerful 15kg/cm servos went to the base of the cobra to hold more weight, so, t
 |   V+    |   OUT+  |
 |   GND   |   OUT-  |
 
-## Microphone Amplifier: MAX4466 -> ESP32
+### Microphone Amplifier: MAX4466 -> ESP32
 
 | MAX4466 |   ESP32   |
 |---------|-----------|
@@ -56,20 +56,20 @@ Powerful 15kg/cm servos went to the base of the cobra to hold more weight, so, t
 |   GND   |    GND    |
 
 
-## Batteries:
+### Batteries:
 
 I used four Tesla cells in series with each other.  
 Inserted a switch at the negative side of the battery output.  
 Those outputs go to IN+ and IN- of the buck converter.
 
 
-## BMS Module:
+### BMS Module:
 
 I used BMS Module 1433 4S Li-on Battery Protection 16.8V 30A
 
 This guide details the connection mapping between the **BMS 1433 4S 30A Protection Board** and a **4S Li-ion (16.8V max) battery pack**.
 
-### Battery Wiring Table
+**Battery Wiring Table**
 
 | BMS Board Pin (Left Side) | Battery Pack Node / Wire (Right Side) | Expected Voltage (Nominal / Max) | Description |
 | :--- | :--- | :--- | :--- |
@@ -82,7 +82,7 @@ This guide details the connection mapping between the **BMS 1433 4S 30A Protecti
 | **P-** | Load (`-`) & Charger (`-`) | **0.0V (GND)** | Output negative |
 
 
-### Wiring Connection Sequence
+**Wiring Connection Sequence**
 
 > **Important:** Always solder sensing wires in order from lowest potential (`0V`) to highest potential (`16.8V`) to avoid damaging the protection ICs.
 
@@ -94,7 +94,7 @@ This guide details the connection mapping between the **BMS 1433 4S 30A Protecti
 6. **`P+` / `P-` Terminals:** Connect your DC output load and 16.8V lithium charger.
 
 
-### BMS Activation Note
+**BMS Activation Note**
 
 If `P+` and `P-` show **0V** after initial assembly, apply a **16.8V CC/CV charger** across `P+` and `P-` for **2–3 seconds** to trigger the onboard MOSFET switch and activate the module.
 
